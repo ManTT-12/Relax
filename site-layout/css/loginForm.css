@@ -1,0 +1,120 @@
+* {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: powderblue;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    position: relative;
+    display: block;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+#login-header,
+#signup-header {
+    text-transform: capitalize;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    width: 100%;
+}
+
+.login-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-group-vertical {
+    border-radius: 20px;
+    background-color: paleturquoise;
+    border: 1px solid powderblue;
+}
+
+.signup-txt {
+    margin-top: 8px;
+    display: flex;
+}
+
+
+/* đăng ký bằng acc fb, gg */
+
+.signup-btn {
+    text-align: center;
+}
+
+.hr-text {
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: black;
+    text-align: center;
+    height: 1.5em;
+    opacity: .5;
+}
+
+.other-btn {
+    display: block;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.other-btn button,
+.fb-gg-btn button {
+    width: 100%;
+}
+
+.signup-btn button {
+    border: 1px solid black;
+    width: 100%;
+    background-color: lightblue;
+}
+
+.other-btn button,
+.social-btn button {
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+
+/* facebook */
+
+.fb-btn {
+    margin-right: 5px;
+    background-color: rgba(0, 0, 255, 0.5)
+}
+
+.bxl-facebook,
+.bxl-google {
+    font-size: 20px;
+    color: white
+}
+
+
+/* google */
+
+.gg-btn {
+    background-color: rgba(255, 0, 0, 0.589);
+}

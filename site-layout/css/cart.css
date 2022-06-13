@@ -1,0 +1,102 @@
+#navbar {
+    position: relative;
+    margin-top: 0px;
+}
+
+.container {
+    max-width: 95%;
+}
+
+#cart {
+    margin: 15px 10px;
+    padding: 5px;
+    width: 100%;
+    max-height: 100%;
+}
+
+#cart-title h4 {
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+#cart-list {
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    width: 20%;
+    font-size: 22px;
+}
+
+.cart-item__img,
+.cart-item__name,
+.cart-item__price,
+.cart-item__actions,
+.cart-item__price-total {
+    margin: 2px;
+    padding: 2px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.cart-item__name {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border: none;
+}
+
+img {
+    width: 160px;
+    height: 140px;
+    object-fit: contain;
+}
+
+.cart-item__actions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cart-item__price-total {
+    text-align: end;
+}
+
+.bx {
+    font-size: 30px;
+}
+
+.cart-total {
+    float: right;
+    font-size: 20px;
+    margin: 2px;
+    padding: 2px;
+}
+
+.cart-btns {
+    margin: 5px;
+}
+
+.cart-btns button {
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+    }
+}

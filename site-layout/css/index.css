@@ -1,0 +1,395 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+
+/* title, navbar */
+
+header {
+    display: block;
+    width: 100%;
+    height: 90px;
+    z-index: 1;
+}
+
+.title {
+    background-image: linear-gradient(to right, blue, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+    font-family: cursive;
+    text-align: center;
+    height: 40px;
+    z-index: 3;
+}
+
+
+.bars,
+.close,
+.nav-overlay {
+    display: none;
+}
+
+
+.nav-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+#navbar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 2;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    border: 1px solid powderblue;
+    border-radius: 38px;
+    padding: 0;
+}
+
+.nav-link,
+#nav-mobi .nav-link {
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: white;
+    text-decoration: underline white;
+}
+
+/* nav mobi */
+#nav-mobi {
+    display: none;
+    background-color: navajowhite;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 200px;
+    z-index: 2;
+}
+
+
+#nav-mobi ul {
+    margin-top: revert;
+    padding: 0;
+    margin-top: 30px;
+}
+
+#nav-mobi .nav-link {
+    width: 100%;
+    color: #809fff
+}
+
+#nav-mobi .nav-link:hover {
+    background-color: #809fff;
+    color: whitesmoke;
+}
+
+/* slide */
+#slideshow {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    background-position: center center;
+}
+
+.slide-active img {
+    height: 500px;
+    object-fit: contain;
+}
+
+.prev-btn,
+.next-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    margin-top: -22px;
+    border: 1px solid white;
+    border-radius: 0 10px 10px 0;
+    user-select: none;
+    transition: 0.6s ease;
+}
+
+.next-btn {
+    right: 0;
+    border-radius: 10px 0 0 10px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+/* body */
+
+.container {
+    height: fit-content;
+    max-height: 100%;
+    padding: 8px;
+    display: flex;
+    z-index: 1;
+}
+
+.main-content {
+    position: relative;
+    display: block;
+    padding: 8px;
+    width: 100%;
+    max-height: 100%;
+    margin-right: 10px;
+}
+
+
+/* latest , drinks, food */
+
+.latest,
+.drinks,
+.foods {
+    margin-bottom: 20px;
+}
+
+.latest-title,
+.drink-title,
+.food-title {
+    display: flex;
+    text-transform: capitalize;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.latest-title h3,
+.drink-title h3,
+.food-title h3 {
+    text-decoration: underline rgb(113, 158, 218);
+}
+
+.latest-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 2px;
+}
+
+.card {
+    position: relative;
+    margin-right: 8px;
+    box-shadow: 1px 1px gainsboro;
+}
+
+.card img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.card-body {
+    padding: 8px;
+}
+
+
+.card-title {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.bx {
+    font-size: 25px;
+}
+
+/* card-hover */
+.card:hover {
+    box-shadow: 4px 4px gainsboro;
+}
+
+.card:hover .card-hover {
+    width: 100%;
+    animation: FadeIn 0.7s ease-in-out forwards;
+}
+
+.card:hover .btn {
+    display: block;
+
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* control add to cart */
+.card-hover {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* display: block;
+    justify-content: center;
+    align-items: center; */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 0%;
+}
+
+
+.btn {
+    display: none;
+    position: absolute;
+    border-radius: 20px;
+    height: fit-content;
+    padding: 0;
+    font-size: 1.1em;
+    background-color: white;
+    top: 30%;
+    border: 1px solid transparent;
+    animation: FadeOut 0.7s ease-in-out forwards;
+    -webkit-animation: FadeOut 0.7s ease-in-out forwards;
+    cursor: pointer;
+}
+
+.btn span {
+    font-family: 'Farsan', cursive;
+    padding: 2px 10px;
+}
+
+.btn .price {
+    border-right: 1px solid #809fff;
+}
+
+
+/* footer */
+
+footer {
+    display: flex;
+    border-top: 2px solid black;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+#social-btn {
+    display: flex;
+}
+
+#social-btn li {
+    padding: 5px;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+.bx {
+    font-size: 35px;
+}
+
+.bxl-github {
+    background-color: black;
+    color: white;
+}
+
+.bxl-instagram {
+    color: white;
+    background-image: linear-gradient(to bottom, blue, purple, deeppink, red, yellow);
+    border-radius: 10px;
+}
+
+/* responsive */
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        padding: 2px;
+        padding-top: 5px;
+        height: 60px;
+        background-color: navajowhite;
+        overflow: hidden;
+    }
+
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .bars,
+    .close {
+        display: block;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    footer {
+        display: block;
+        text-align: center;
+    }
+
+    #social-btn {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* nav togger */
+    #nav-togger:checked~#nav-mobi,
+    #nav-togger:checked~.nav-overlay {
+        display: block;
+    }
+
+    #nav-togger:checked~.close {
+        display: none;
+    }
+}
+
+/* animations */
+@keyframes FadeIn {
+    0% {
+        width: 40%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes FadeOut {
+    0% {
+        right: 0;
+    }
+
+    100% {
+        right: 3.5%;
+    }
+}
