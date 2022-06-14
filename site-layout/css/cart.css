@@ -42,6 +42,10 @@ td {
     font-size: 22px;
 }
 
+#card-header tr th:first-child {
+    width: 40%;
+}
+
 .cart-item__img,
 .cart-item__name,
 .cart-item__price,
@@ -72,6 +76,10 @@ img {
     align-items: center;
 }
 
+.cart-item__actions span:nth-child(2) {
+    width: 25%;
+}
+
 .cart-item__price-total {
     text-align: end;
 }
@@ -94,6 +102,8 @@ img {
 .cart-btns button {
     border: 1px solid black;
 }
+
+
 
 @media screen and (max-width: 600px) {
     .container {
