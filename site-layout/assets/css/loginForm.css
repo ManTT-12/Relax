@@ -36,6 +36,14 @@ form {
     justify-content: space-between;
 }
 
+#login-header a {
+    margin-left: 10px;
+}
+
+#signup-header .bx {
+    font-size: 22px;
+}
+
 input {
     width: 100%;
 }
@@ -79,6 +87,10 @@ input {
     align-items: center;
     align-content: center;
     text-align: center;
+}
+
+.social-btn {
+    display: flex;
 }
 
 .other-btn button,

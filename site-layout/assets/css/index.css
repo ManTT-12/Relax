@@ -133,6 +133,10 @@ header .title .bars {
     object-fit: contain;
 }
 
+#slideshow button {
+    outline: none;
+}
+
 #slideshow .prev-btn,
 #slideshow .next-btn {
     cursor: pointer;

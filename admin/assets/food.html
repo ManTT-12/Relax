@@ -12,20 +12,19 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/addnew.css">
+    <link rel="stylesheet" href="./css/food.css">
     <title>ADMIN-DarkBlue</title>
 </head>
 
 <body>
     <div id="sidebar">
         <ul id="sidebar-menu">
-            <li><a class="brand" href="./index.html">
+            <li><a class="brand" href="../index.html">
                     <span class="icon"><i></i></span>
                     <span class="brand">Relax</span>
                 </a>
             </li>
-            <li><a class="nav-link" href="./index.html">
+            <li><a class="nav-link" href="../index.html">
                     <span class="icon"><i class="fa-solid fa-house"></i></span>
                     <span class="title">Dashboard</span>
                 </a>
@@ -70,37 +69,62 @@
                 <i class="fa-solid fa-user-large"></i>
             </div>
         </header>
-        <!-- add form -->
+        <!-- food -->
         <main>
-            <a href="./index.html" class="return-home"><i class='bx bx-share'></i>Home</a>
-            <form target="_blank" id="add_form">
-                <div class="add_form_header">
-                    <h3>thêm món mới</h3>
-                </div>
-                <div class="add_form_content">
-                    <div class="form-group">
-                        <label for="add_food_image">Hình ảnh:</label>
-                        <input type="file" id="add_food_image" placeholder="Please enter image" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="add_food_name">Tên món:</label>
-                        <input type="text" id="add_food_name" placeholder="Please enter food name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="add_food_cost">Giá:</label>
-                        <input type="text" id="add_food_cost" placeholder="Please enter cost" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="add_food_sl">Số lượng:</label>
-                        <input type="number" id="add_food_sl" placeholder="Please enter amount" required>
-                    </div>
-                </div>
-                <div class="add_form_btns">
-                    <button type="button">Thêm</button>
-                </div>
-            </form>
+            <a href="./addnew.html"><button id="add-btn">Thêm mới</button></a>
+            <h3 class="title">Danh sách thức ăn</h3>
+            <table id="list-items">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th class="list-image" scope="col">Hình ảnh</th>
+                        <th class="list-name" scope="col">Tên</th>
+                        <th class="list-id" scope="col">ID</th>
+                        <th class="list-cost" scope="col">Giá</th>
+                        <th class="list-sl" scope="col">Số lượng</th>
+                        <th class="list-btns" scope="col">chức năng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">1</td>
+                        <td class="list-image"><img src="./img/hinh-anh-do-an-de-thuong-cuc-dep_095148875.jpg"
+                                alt="đồ ăn">
+                        </td>
+                        <th class="list-name">Món 1</th>
+                        <td class="list-id">123456</td>
+                        <td class="list-cost">$10</td>
+                        <td class="list-sl">10</td>
+                        <td class="list-btns">
+                            <div id="manager">
+                                <a href=""><i class="fa-regular fa-pen-to-square"></i></a>
+                                <a style="color: red;" href=""><i class="fa-regular fa-trash-can"></i></a>
+                                <a href="">Thông tin chi tiết</a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </li>
+            </ul>
         </main>
-    </section>
+        <footer></footer>
+        <script src="./js/index.js"></script>
 </body>
 
 </html>
