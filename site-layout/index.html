@@ -18,10 +18,9 @@
 
 <body>
     <header>
-        <input type="checkbox" id="nav-toggle" hidden>
-        <label for="nav-toggle" class="nav-overlay"></label>
+        <div class="nav-overlay"></div>
         <h1 class="title">Relax
-            <label for="nav-toggle" class="bars"><i class="fa-solid fa-bars"></i></label>
+            <div class="bars"><i class="fa-solid fa-bars"></i></div>
         </h1>
         <div id="navbar">
             <ul class="nav-left">
@@ -40,27 +39,27 @@
             </ul>
         </div>
         <div id="nav-mobi">
-            <label class="nav-close" for="nav-toggle"><i class='bx bxs-tag-x'></i></label>
+            <div class="nav-close"><i class="fa-solid fa-xmark"></i></div>
             <ul class="nav-mobi-menu">
-                <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="">Drink</a></li>
-                <li class="nav-item"><a class="nav-link" href="">Food</a></li>
+                <li class="nav-item active"><a class="nav-link" href="./index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Drink</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Food</a></li>
                 <li class="nav-item"><a class="nav-link" href="">Contacts</a></li>
                 <li class="nav-item"><a class="nav-link" href="">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="./assets/loginForm.html"><i
-                            class='bx bx-user-circle'></i></a>
+                        class='bx bx-user-circle'></i></a>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="./assets/cart.html"><i class='bx bx-cart-alt'></i></a>
                 </li>
             </ul>
         </div>
     </header>
-    <div id="slideshow">
+    <!-- <div id="slideshow">
         <div class="slide-active"><img src="./assets/img/hinh-anh-backgroud-hoa-dao-no-cuc-ky-dep_034909613.png"
                 alt="background" height="400px" width="100%"></div>
         <button type="button" class="prev-btn"><i class='bx bx-chevron-left'></i></button>
         <button type="button" class="next-btn"><i class='bx bx-chevron-right'></i></button>
-    </div>
+    </div> -->
     <div class="container">
         <div class="main-content">
             <div class="latest">
@@ -117,9 +116,9 @@
     </div>
     <footer>
         <ul id="social-btn">
-            <li><a href=""><i class='bx bxl-facebook-circle'></i></a></li>
-            <li><a href=""><i class='bx bxl-instagram'></i></a></li>
-            <li><a href=""><i class='bx bxl-github'></i></a></li>
+            <li><a aria-label="facebook" href=""><i class='bx bxl-facebook-circle'></i></a></li>
+            <li><a aria-label="instagram" href=""><i class='bx bxl-instagram'></i></a></li>
+            <li><a aria-label="github" href=""><i class='bx bxl-github'></i></a></li>
         </ul>
         <p>Copyright &copy; by ManTang 2022 </p>
     </footer>

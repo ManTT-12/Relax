@@ -1,12 +1,22 @@
-const navIcon = document.getElementsByClassName("bars");
-const navMenu = document.getElementById("navbar");
-const navClose = document.getElementsByClassName("close");
+const $ = document.querySelector.bind(document);
+const $$ = document.querySelectorAll.bind(document);
 
-navIcon.addEventListener('click', function()){
-    if(navMenu.style.opacity == "1"){
-        navMenu.style.opacity = '0';
-    }else{
-        navMenu.style.opacity = '1';
-        navMenu.pointerEvents = 'auto'
-    }
+const navMobiMenu = $('#nav-mobi');
+const navIcon = $('.bars');
+const navClose = $('.nav-close');
+
+navIcon.onclick = function(){
+    navMobiMenu.classList.add('showMenu');
 }
+
+navClose.onclick = function() {
+    navMobiMenu.classList.remove('showMenu');
+}
+
+const navMenuItems = $$('.nav-item');
+navMenuItems.forEach((item, index) => {
+    item.onclick = function() {
+        $('.nav-item.active').classList.remove('active');
+        this.classList.add('active');
+    }
+})
